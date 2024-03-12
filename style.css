@@ -18,12 +18,13 @@ body {
   height: 90%;
   width: 90%;
   display: flex;
-  background-color: red;
+  flex-wrap: wrap;
 }
 
 .shop-item {
   height: 40%;
-  width: 15%;
+  width: 12%;
+  margin-left: 30px;
 }
 
 .item-image {
