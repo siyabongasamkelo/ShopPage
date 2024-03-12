@@ -1,4 +1,4 @@
-const itemContainer = document.getElementsByClassName("shop-item");
+const itemContainer = document.getElementsByClassName("shop-container");
 
 const baseUrl = "https://watches-fks5.onrender.com";
 const getItems = async () => {
@@ -20,17 +20,9 @@ const getItems = async () => {
 (async () => {
   const items = await getItems();
 
-  console.log(itemContainer);
-  console.log(items);
-
-  //   items?.items?.forEach((item) => {
-  //     itemContainer[0].innerHTML += `
-  //   <h1>asdasdasd</h1>
-  //         `;
-  //   });
-
   items?.items?.forEach((item) => {
     itemContainer[0].innerHTML += `
+    <div class="shop-item">
           <div class="item-image">
               <img src=${item.image} alt="item" />
           </div>
@@ -46,7 +38,7 @@ const getItems = async () => {
                 <p>(100) reviews</p>
               </div>
           </div>
-
+    </div>
           `;
   });
 })();
