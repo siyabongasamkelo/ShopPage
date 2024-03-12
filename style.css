@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.shop-wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-container {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  background-color: red;
+}
+
+.shop-item {
+  height: 40%;
+  width: 15%;
+}
+
+.item-image {
+  height: 70%;
+  width: 100%;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.item-details {
+  height: 30%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#star {
+  fill: gold;
+  color: gold;
+}
